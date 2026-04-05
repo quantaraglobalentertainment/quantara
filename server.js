@@ -18,6 +18,7 @@ const Stripe = require('stripe');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 3001;
 
 // ── CLIENTS ──────────────────────────────────────────────────
